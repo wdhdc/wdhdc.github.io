@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>jdprs · 个人主页</title>
+<title>wdhdc · 个人主页</title>
 <style>
   :root {
     --bg: #ffffff;
@@ -155,11 +155,11 @@
 <body>
 
 <header class="hero">
-  <img class="avatar" id="avatar" alt="jdprs" src="https://avatars.githubusercontent.com/u/318268758?v=4"/>
-  <h1>jdprs<span class="dot">.</span></h1>
+  <img class="avatar" id="avatar" alt="wdhdc" src="https://avatars.githubusercontent.com/u/318268758?v=4"/>
+  <h1>wdhdc<span class="dot">.</span></h1>
   <p class="tagline">独立游戏开发者 &amp; 前端玩家 · 用 HTML / CSS / JS 造好玩的东西</p>
   <p class="hero-links">
-    <a href="https://github.com/jdprs" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://github.com/wdhdc" target="_blank" rel="noopener">GitHub</a>
     <a href="player.html">🎬 视频</a>
     <a href="#repos">公开仓库</a>
     <a href="#about">关于</a>
@@ -209,9 +209,9 @@
 <footer>
   <div class="f-links">
     <a href="AI安全与全球治理.pptx" download>📄 下载《AI安全与全球治理》PPT</a>
-    <a href="https://github.com/jdprs/jdprs.github.io" target="_blank" rel="noopener">仓库源码</a>
+    <a href="https://github.com/wdhdc/wdhdc.github.io" target="_blank" rel="noopener">仓库源码</a>
   </div>
-  <div>© 2026 jdprs · 简约白底 · Made with HTML/CSS/JS</div>
+  <div>© 2026 wdhdc · 简约白底 · Made with HTML/CSS/JS</div>
 </footer>
 
 <script>
@@ -219,9 +219,9 @@
   "use strict";
 
   // 已知可访问的 GitHub Pages 站点（其余仓库仅给 GitHub 链接）
-  var LIVE_PAGES = { "jdprs.github.io": 1, "macos-clone": 1, "xfw-net": 1, "jmind": 1 };
-  var PAGES_BASE = "https://jdprs.github.io/";
-  var API_REPOS = "https://api.github.com/users/jdprs/repos?sort=updated&per_page=100&type=owner";
+  var LIVE_PAGES = { "wdhdc.github.io": 1, "macos-clone": 1, "xfw-net": 1, "jmind": 1 };
+  var PAGES_BASE = "https://wdhdc.github.io/";
+  var API_REPOS = "https://api.github.com/users/wdhdc/repos?sort=updated&per_page=100&type=owner";
 
   // 兜底数据（接口限流/失败时展示，保证页面不空）
   var FALLBACK = [
@@ -229,7 +229,7 @@
     { name: "macos-clone", description: "用 HTML+CSS+JS 高保真复刻 macOS 桌面，无框架", language: "JavaScript", stargazers_count: 0, updated_at: "2026-09-25" },
     { name: "jmind", description: "本地优先的在线思维导图：拖拽、撤销重做、导出 PNG", language: "JavaScript", stargazers_count: 0, updated_at: "2026-09-10" },
     { name: "xfw-cli", description: "小富翁股票投资游戏 · 纯终端 CLI 版（零依赖）", language: "JavaScript", stargazers_count: 0, updated_at: "2026-09-19" },
-    { name: "jdprs.github.io", description: "本个人主页站点", language: "HTML", stargazers_count: 0, updated_at: "2026-09-27" }
+    { name: "wdhdc.github.io", description: "本个人主页站点", language: "HTML", stargazers_count: 0, updated_at: "2026-09-27" }
   ];
 
   var LANG_COLORS = { "JavaScript": "#f1e05a", "HTML": "#e34c26", "CSS": "#563d7c", "TypeScript": "#3178c6", "Python": "#3572A5", "Shell": "#89e051" };
@@ -246,7 +246,7 @@
   }
 
   function pagesUrl(name) {
-    return name === "jdprs.github.io" ? PAGES_BASE : PAGES_BASE + name + "/";
+    return name === "wdhdc.github.io" ? PAGES_BASE : PAGES_BASE + name + "/";
   }
 
   function repoCard(r, i) {
@@ -257,7 +257,7 @@
       : "";
     return (
       '<div class="repo" style="animation-delay:' + Math.min(i * 60, 480) + 'ms">' +
-        '<div class="r-name"><a href="https://github.com/jdprs/' + esc(r.name) + '" target="_blank" rel="noopener">' + esc(r.name) + "</a></div>" +
+        '<div class="r-name"><a href="https://github.com/wdhdc/' + esc(r.name) + '" target="_blank" rel="noopener">' + esc(r.name) + "</a></div>" +
         '<div class="r-desc">' + (esc(r.description) || "暂无简介") + "</div>" +
         '<div class="r-meta">' +
           "<span>" + dot + "</span>" +
@@ -302,7 +302,7 @@
   }
 
   // 视频数量（读 videos/data.json，经 jsDelivr CDN，失败静默）
-  fetch("https://cdn.jsdelivr.net/gh/jdprs/jdprs.github.io@main/videos/data.json")
+  fetch("https://cdn.jsdelivr.net/gh/wdhdc/wdhdc.github.io@main/videos/data.json")
     .then(function (r) { return r.json(); })
     .then(function (d) {
       var n = (d && Array.isArray(d.videos)) ? d.videos.length : 0;
