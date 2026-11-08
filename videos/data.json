@@ -1,5 +1,5 @@
 {
-  "repo": "jdprs/jdprs.github.io",
+  "repo": "wdhdc/wdhdc.github.io",
   "branch": "main",
   "updated": "2026-10-11",
   "note": "在 videos 下新建视频文件夹（含 info.json），然后在本文件 videos 数组中追加 {\"folder\": \"文件夹名\"} 即可。详细说明见 videos/需要什么文件.txt",
